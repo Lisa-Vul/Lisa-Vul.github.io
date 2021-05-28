@@ -70,7 +70,6 @@ a {
 .wide-box{
 	margin: 10px;
 	width: 98.5%;
-	background-color: rgb(196, 255, 140);
 }
 
 .short-box{
@@ -135,9 +134,9 @@ img {
 }
 
 .overlay3{
-	width: 300px;
+	width: 400px;
 	top: 260px;
-  	left: 250px;
+  	left: 180px;
 	opacity: 90%;
 }
 
