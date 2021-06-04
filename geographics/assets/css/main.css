@@ -16,7 +16,7 @@ a {
 
 
 .title{
-	background-color: white;
+
 	width: 280px;
 	padding: 8px;
 	margin-bottom: 12px;
@@ -139,14 +139,13 @@ video{
 	cursor: pointer;
 }
 
-.blue{
-	/* background-color: white; */
+.dragme{
+	cursor: pointer;
 }
 
-.dragme{
-	cursor: move;
+.hide{
+	display: none;
 }
-/*END IMAGES*/
 
 /* TEXTBOXES */
 .border{
@@ -183,6 +182,25 @@ video{
 }
 
 .bubble:hover{
+	background-color:rgb(214, 169, 255);;
+	color: white;
+}
+
+.bubble-1{
+	text-align: center;
+	font-size: 24px;
+	padding: 7px;
+	width: 110px;
+	height: 40px;
+	border-radius: 50px;
+	margin: 4px;
+	margin-left: 10px;
+	background-color: black;
+	text-decoration: none;
+	color: white;
+}
+
+.bubble-1:hover{
 	background-color:rgb(214, 169, 255);;
 	color: white;
 }
@@ -225,9 +243,10 @@ video{
 
 /*TYPE*/
 .header {
-	font-size: 50px;
+	font-size: 36pt;
 	width: 100%;
 	padding: 18px;
+	font-family: Format;
 
   }
 
@@ -239,8 +258,12 @@ video{
 
 strong {
 	font-family: Format;
-	font-size: 21pt;
+	font-size: 20pt;
+	/* border: 2px solid black; */
+	padding: 4px;
+	padding-bottom:0px
 }
+
 em {
 	font-style: italic;
 	font-weight: lighter;
@@ -262,9 +285,10 @@ em {
 	padding-left: 20px;
 	padding-right: 15px;
 	padding-bottom: 15px;
-	font-size: 34pt;
-	font-style: italic;
+	font-size: 36pt;
+	font-family: Format;
 	font-weight: lighter;
+	line-height: 39pt;
 }
 
 .quote:hover{
@@ -272,18 +296,16 @@ em {
 }
 
 .subheader{
-	text-transform: capitalize;
-	font-size: 14pt;
+	font-size: 20pt;
 	text-align: center;
 	padding: 5px;
 	padding-top: 10px;
 }
 
 .subheader-left{
-	font-size: 14pt;
+	font-size: 20pt;
 	padding-top: 10px;
 	padding-left: 20%;
-	text-transform: capitalize;
 }
 
 .tar{
