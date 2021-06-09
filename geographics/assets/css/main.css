@@ -6,7 +6,7 @@ body {
 }
 
 a {
-	color:red;
+	color:black;
 }
 
 @font-face{
@@ -14,16 +14,26 @@ a {
 	src: url("fonts/Format_1452.otf");
 }
 
+.background-long{
+ height: 100vh;
+}
+
 
 .title{
-
-	width: 280px;
+	width: 800px;
 	padding: 8px;
 	margin-bottom: 12px;
 	position: fixed;
-	top: 10px;
-	left: 40%;
-	z-index: 2;
+	top: 20%;
+	left: 21%;
+	z-index: 3;
+	opacity: 50%;
+}
+
+.size{
+	position: fixed;
+	top: 0%;
+	left: 0%;
 }
 
 .top-margin{
@@ -67,11 +77,11 @@ a {
 }
 
 .I1{
-	width: 32%;
+	width: 48.5%;
 }
 
 .I2{
-	width: 14.5%;
+	width: 22%;
 }
 
 .I3{
@@ -87,10 +97,6 @@ a {
 }
 
 /*IMAGES and VIDEOS*/
-.book1{
-	width: 100%;
-}
-
 img {
 	width: 100%;
 }
@@ -99,31 +105,87 @@ img {
 	border-radius: 30px;
 }
 
-.overlay{
+/* .overlay{
+	z-index: 2;
+	width: 180px;
+	margin: 5px;
+	opacity: 90%;
+}
+
+.sml-container {
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+} */
+
+/* .w-250{
+	width: 250px;
+	position: absolute;
+}
+
+.C{
+	top: 18%;
+	left: 1%;
+	margin: 5px;
+}
+
+.A{
+	top: 20%;
+	left: 9.5%;
+	margin: 5px;
+}
+
+.P{
+	top: 24%;
+	left: 26%;
+	margin: 5px;
+}
+
+.T{
+	top: 19%;
+	left: 39%;
+	margin: 5px;
+}
+
+.CC{
+	top: 20%;
+	left: 49%;
+	margin: 5px;
+}
+
+
+.H{
+	top: 20%;
+	left: 65%;
+	margin: 5px;
+}
+
+.AA{
+	top: 15%;
+	left: 80%;
+	margin: 5px;
+} */
+
+/* .invert{
+	width: 100%;
+	opacity: 80%;
 	position: fixed;
-	z-index: 3;
+	z-index: 4;
+	top: 1%;
 }
+.invert-1{
+	width: 100%;
+	opacity: 80%;
+	position: fixed;
+	z-index: -1;
+	top: 1%;
+} */
 
-.overlay1{
-	width: 350px;
-	height: 200px;
-	bottom: 140px;
-  	left: 500px;
-	opacity: 70%;
-}
-
-.overlay2{
-	width: 300px;
-	top: 275px;
-  	right: 250px;
-	opacity: 90%;
-}
-
-.overlay3{
-	width: 380px;
-	top: 200px;
-  	left: 150px;
-	opacity: 90%;
+.rotate90{
+	transform: rotate(90deg);
 }
 
 video{
@@ -133,7 +195,6 @@ video{
 
 .row {
 	width: 100%;
-	/* border-bottom: 2px solid cyan; */
 	display: flex;
 	flex-wrap: wrap;
 	cursor: pointer;
@@ -145,6 +206,16 @@ video{
 
 .hide{
 	display: none;
+}
+
+.blur{
+	filter: blur(10px);	
+	transition: 0.8s;
+}
+
+.blur:hover{
+	filter: blur(0px);
+	transition: 0.8s;
 }
 
 /* TEXTBOXES */
@@ -170,38 +241,38 @@ video{
 }
 
 .bubble{
-	font-size: 24px;
-	padding: 5px;
+	text-align: center;
+	margin: 10px;
 	width: 30px;
 	height: 30px;
 	border-radius: 50px;
-	margin: 4px;
 	background-color: black;
 	text-decoration: none;
 	color: white;
 }
 
 .bubble:hover{
-	background-color:rgb(214, 169, 255);;
+	background-color:turquoise;
 	color: white;
+}
+
+.bubble-width-big{
+	max-width: 650px;
+	height: 155px;
+	font-size: 36pt;
 }
 
 .bubble-1{
-	text-align: center;
-	font-size: 24px;
-	padding: 7px;
-	width: 110px;
-	height: 40px;
-	border-radius: 50px;
-	margin: 4px;
-	margin-left: 10px;
-	background-color: black;
-	text-decoration: none;
-	color: white;
+	margin: auto;
+	border-radius: 30px;
+	background-color: lime;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
 
 .bubble-1:hover{
-	background-color:rgb(214, 169, 255);;
+	background-color:black;
 	color: white;
 }
 
@@ -239,6 +310,34 @@ video{
 	left: 180px;
 }
 
+.l2{
+	position: fixed;
+	top: 25%;
+	right: 10%;
+	z-index: 4;
+}
+
+.l3{
+	position: fixed;
+	bottom: 35%;
+	right: 35%;
+	z-index: 4;
+}
+
+.l4{
+	position: fixed;
+	top: 35%;
+	left: 20%;
+	z-index: 4;
+}
+
+.l5{
+	position: fixed;
+	top: 15%;
+	right: 40%;
+	z-index: 4;
+}
+
 
 
 /*TYPE*/
@@ -250,10 +349,49 @@ video{
 
   }
 
-.header:hover{
+.pink{
+	color: black;
+}
+
+.pink:hover{
 	color:rgb(214, 169, 255);
 	border-top:2px solid rgb(214, 169, 255) ;
-	/* border-bottom: 2px solid rgb(214, 169, 255) ; */
+}
+
+.orange{
+	color: black;
+}
+
+.orange:hover{
+	color:rgb(255, 154, 60);
+	border-top:2px solid rgb(255, 154, 60);
+}
+
+.lime{
+	color: black;
+}
+
+.lime:hover{
+	color:lime;
+	border-top:2px solid lime ;
+}
+
+.blue{
+	color: black;
+}
+
+.blue:hover{
+	color: blue;
+	border-top: 2px solid blue;
+}
+
+.red{
+	color: black;
+}
+
+.red:hover{
+	color: red;
+	border-top:2px solid red;
 }
 
 strong {
@@ -289,7 +427,7 @@ em {
 	font-size: 36pt;
 	font-family: Format;
 	font-weight: lighter;
-	line-height: 39pt;
+	line-height: 38.5pt;
 }
 
 .quote:hover{
@@ -314,9 +452,17 @@ em {
 	padding-right: 20px;
 }
 
-/* .italics{
-	font-style: italic;
+.no-line{
+	text-decoration: none;
 	font-family: Format;
-} */
+}
+
+.white{
+	color: white;
+}
+
+.line{
+	font-family:Format;
+}
 
 
