@@ -21,6 +21,7 @@ a {
 	position: fixed;
 	top: 20%;
 	left: 22%;
+	z-index: 4;
 }
 
 .size{
@@ -88,6 +89,16 @@ a {
 	margin-top: 15px;
 }
 
+.imagery-1{
+	margin-left: 90px;
+	margin-right: 50px;
+}
+
+.imagery-2{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 /*IMAGES and VIDEOS*/
 img {
 	width: 100%;
@@ -99,6 +110,8 @@ img {
 
 video{
 	width: 110%;
+	display: block;
+	margin-right:-40px;
 }
 
 .overflow{
@@ -243,6 +256,10 @@ strong {
 	display: inline-block;
 }
 
+strong:hover{
+	color: lime;
+}
+
 .text{
 	padding-top: 10px;
 	padding-left: 15px;
@@ -257,7 +274,6 @@ strong {
 }
 
 .quote{
-	color: lime;
 	padding-top: 30px;
 	padding-bottom: 10px;
 	line-height: 33pt;
@@ -265,7 +281,7 @@ strong {
 }
 
 .quote:hover{
-	color: black;
+	color: lime;
 }
 
 .quote:hover{
@@ -298,6 +314,10 @@ strong {
 .line{
 	font-family:Format;
 	cursor: pointer;
+}
+
+.line:hover{
+	color: lime;
 }
 
 .white{
